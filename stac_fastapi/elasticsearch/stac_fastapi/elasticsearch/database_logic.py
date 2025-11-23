@@ -583,7 +583,7 @@ class DatabaseLogic(BaseDatabaseLogic):
                         ),
                     ],
                 )
-            return search.query(filter_query), result_metadata
+        return search.query(filter_query), result_metadata
 
     @staticmethod
     def apply_bbox_filter(search: Search, bbox: List):
